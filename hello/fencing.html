@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --primary-color: #2563eb;--destructive-color: #dc2626;--background-color: #111827;--card-color: #1f2937;--text-primary: #f9fafb;--text-secondary: #9ca3af;--border-color: #374151;
+      }
+      .flashing-border {
+        animation: flash 1s infinite;
+      }
+      @keyframes flash {
+        0%, 100% { border-color: var(--destructive-color); }
+        50% { border-color: transparent; }
+      }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]"
+    style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+        <div class="flex-grow">
+            <header class="flex items-center p-4 justify-between border-b border-[var(--border-color)]">
+                <button class="text-white">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                </button>
+                <h1 class="text-xl font-bold text-center flex-1">Geo-Fence Breach</h1>
+                <div class="w-8"></div>
+            </header>
+            <main class="p-4 space-y-6">
+                <div
+                    class="bg-red-500/20 border border-red-500 text-red-400 px-4 py-3 rounded-lg flex items-center gap-3">
+                    <span class="material-symbols-outlined text-red-400">
+                        warning
+                    </span>
+                    <div>
+                        <h2 class="font-bold">Geo-Fence Breach Detected</h2>
+                        <p class="text-sm">Tourist ID: 987654321</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden border-2 border-transparent flashing-border">
+                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9rnwMkbji3EpyrmANEtyrbDprXWkkrrina414_WfZYkOub62NoX9C6egz56ThCRGX8AEr9lk6Jx7EfsreUh92hQ3w6TXCthyWjslGArgcT1iFOz6w7DGzZhTjJArOPFrjdaRvGh3wWaN3FRnTOcHoWE7DpfIYjpfpVKpiLNnGmFBUmuCtIl0-z5pWmLCB2ajjfeDuNleqAIuUhW_-KXAOv48I4z168RG8ztGTPD2k2-Dts6_O2BTZOGGgtI1_klTD6LOthQlfQoI");'>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-[var(--card-color)] p-3 rounded-lg">
+                        <div class="bg-blue-500/20 p-3 rounded-full">
+                            <span class="material-symbols-outlined text-blue-400">
+                                location_on
+                            </span>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-[var(--text-secondary)] text-sm">Current Location</p>
+                            <p class="text-[var(--text-primary)] font-medium">26.1445° N, 91.7362° E</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[var(--card-color)] p-3 rounded-lg">
+                        <div class="bg-green-500/20 p-3 rounded-full">
+                            <span class="material-symbols-outlined text-green-400">
+                                verified_user
+                            </span>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-[var(--text-secondary)] text-sm">Last Safe Location</p>
+                            <p class="text-[var(--text-primary)] font-medium">26.1450° N, 91.7355° E</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[var(--card-color)] p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">Advisory Message</h3>
+                    <p class="text-[var(--text-secondary)]">
+                        Dear Tourist, you have crossed a geo-fence boundary. Please return to the safe zone immediately.
+                        For assistance, contact us.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <button
+                        class="flex w-full items-center justify-center gap-2 rounded-lg h-12 px-4 bg-[var(--primary-color)] text-white text-base font-bold">
+                        <span class="material-symbols-outlined">send</span>
+                        <span>Send Warning</span>
+                    </button>
+                    <button
+                        class="flex w-full items-center justify-center gap-2 rounded-lg h-12 px-4 bg-[var(--destructive-color)] text-white text-base font-bold">
+                        <span class="material-symbols-outlined">sos</span>
+                        <span>Dispatch Help</span>
+                    </button>
+                    <button
+                        class="flex w-full items-center justify-center rounded-lg h-12 px-4 bg-transparent border border-[var(--border-color)] text-[var(--text-secondary)] text-base font-bold">
+                        <span>Mark as False Alarm</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+        <footer class="sticky bottom-0">
+            <nav class="flex justify-around border-t border-[var(--border-color)] bg-[var(--card-color)] py-2">
+                <a class="flex flex-col items-center justify-end gap-1 text-[var(--primary-color)]" href="#">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="text-xs">Home</span>
+                </a>
+                <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                    <span class="material-symbols-outlined">search</span>
+                    <span class="text-xs">Search</span>
+                </a>
+                <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                    <span class="material-symbols-outlined">add_circle</span>
+                    <span class="text-xs">New</span>
+                </a>
+                <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="text-xs">Alerts</span>
+                </a>
+                <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+                    <span class="material-symbols-outlined">person</span>
+                    <span class="text-xs">Profile</span>
+                </a>
+            </nav>
+            <div class="h-4 bg-[var(--card-color)]"></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

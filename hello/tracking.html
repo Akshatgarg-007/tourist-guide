@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans:wght@400;500;700;900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --primary-color: #0da6f2;
+      }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-[#101d23]">
+    <div class="relative flex size-full min-h-screen flex-col dark justify-between group/design-root overflow-x-hidden"
+        style='font-family: "Public Sans", sans-serif;'>
+        <div class="flex flex-col flex-1">
+            <header class="flex items-center p-4 justify-between sticky top-0 z-10 bg-[#101d23]/80 backdrop-blur-sm">
+                <button class="text-white">
+                    <span class="material-symbols-outlined"> arrow_back </span>
+                </button>
+                <h1 class="text-white text-lg font-bold">Live Tracking</h1>
+                <button class="text-white" data-state="closed">
+                    <span class="material-symbols-outlined"> info </span>
+                </button>
+            </header>
+            <main class="flex-1 flex flex-col">
+                <div class="px-4 py-2">
+                    <div class="relative">
+                        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#90b7cb]">
+                            search </span>
+                        <input
+                            class="form-input w-full rounded-full text-white focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border-none bg-[#223c49] placeholder:text-[#90b7cb] pl-10 pr-4 py-2.5 text-base"
+                            placeholder="Search Tourist ID" type="search" />
+                    </div>
+                </div>
+                <div class="flex-1 bg-cover bg-center relative"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIS8mHbUGp8qja1vvNyhftF4Xl1xsUlTa-yFQ7914EAE5stRS9a3y6nzQzC_Yn4YXgtqFtG43jz11D2QLWsxxPKQXgaQMjBeXgvlRGKqYghe7xlHDLtm7gOs-C_MsIue6iOJ3Io_ZSU2UxUcZuAE6hiQ1ftYU8svyI2kbu4pCN2a5nf7KIY3BsrxrSxQrQXvU6OlpF-FmP3u7lcOSFKw1IZFjZguNhzNK0aNk15csfZZAwjMUkx0uyv2DAnfmt-hnHawiM4uElob4");'>
+                    <div class="absolute top-[20%] left-[30%]">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white text-[#101d23] text-xs font-bold px-2 py-1 rounded-md mb-1 shadow-lg">
+                                TID-1024</div>
+                            <span class="material-symbols-outlined text-[var(--primary-color)] text-4xl drop-shadow-lg">
+                                location_on </span>
+                        </div>
+                    </div>
+                    <div class="absolute top-[50%] left-[60%]">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white text-[#101d23] text-xs font-bold px-2 py-1 rounded-md mb-1 shadow-lg">
+                                TID-1025</div>
+                            <span class="material-symbols-outlined text-[var(--primary-color)] text-4xl drop-shadow-lg">
+                                location_on </span>
+                        </div>
+                    </div>
+                    <div class="absolute top-[45%] left-[15%]">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white text-[#101d23] text-xs font-bold px-2 py-1 rounded-md mb-1 shadow-lg">
+                                TID-1026</div>
+                            <span class="material-symbols-outlined text-[var(--primary-color)] text-4xl drop-shadow-lg">
+                                location_on </span>
+                        </div>
+                    </div>
+                    <div class="absolute top-[65%] left-[40%]">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white text-[#101d23] text-xs font-bold px-2 py-1 rounded-md mb-1 shadow-lg">
+                                TID-1027</div>
+                            <span class="material-symbols-outlined text-red-500 text-4xl drop-shadow-lg"> location_on
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="fixed bottom-24 right-4 flex flex-col gap-3">
+            <div class="flex flex-col gap-0.5">
+                <button
+                    class="flex size-12 items-center justify-center rounded-t-lg bg-[#182b34]/80 backdrop-blur-sm shadow-lg">
+                    <span class="material-symbols-outlined text-white text-2xl"> add </span>
+                </button>
+                <button
+                    class="flex size-12 items-center justify-center rounded-b-lg bg-[#182b34]/80 backdrop-blur-sm shadow-lg">
+                    <span class="material-symbols-outlined text-white text-2xl"> remove </span>
+                </button>
+            </div>
+            <button
+                class="flex size-12 items-center justify-center rounded-lg bg-[#182b34]/80 backdrop-blur-sm shadow-lg">
+                <span class="material-symbols-outlined text-white text-2xl"> navigation </span>
+            </button>
+        </div>
+        <div class="fixed bottom-24 left-1/2 -translate-x-1/2 flex gap-2">
+            <button
+                class="flex cursor-pointer items-center justify-center rounded-full h-12 bg-[var(--primary-color)] text-white gap-2 text-sm font-bold min-w-0 px-4 shadow-lg">
+                <span class="material-symbols-outlined"> person_pin </span>
+                <span>Zoom to Tourist</span>
+            </button>
+            <button
+                class="flex cursor-pointer items-center justify-center rounded-full h-12 bg-[var(--primary-color)] text-white gap-2 text-sm font-bold min-w-0 px-4 shadow-lg">
+                <span class="material-symbols-outlined"> add_location_alt </span>
+                <span>Add Geo-Fence</span>
+            </button>
+        </div>
+        <footer class="sticky bottom-0 bg-[#182b34] pb-4">
+            <div class="flex justify-around border-t border-[#223c49] pt-2">
+                <a class="flex flex-col items-center justify-center gap-1 text-[#90b7cb] w-1/4" href="#">
+                    <span class="material-symbols-outlined"> home </span>
+                    <span class="text-xs">Home</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-[var(--primary-color)] w-1/4" href="#">
+                    <span class="material-symbols-outlined"> map </span>
+                    <span class="text-xs">Tracking</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-[#90b7cb] w-1/4" href="#">
+                    <span class="material-symbols-outlined"> notifications </span>
+                    <span class="text-xs">Alerts</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-[#90b7cb] w-1/4" href="#">
+                    <span class="material-symbols-outlined"> person </span>
+                    <span class="text-xs">Profile</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style type="text/tailwindcss">
+        :root {
+        --primary-50: #f2f2f2;
+        --primary-100: #e6e6e6;
+        --primary-200: #cccccc;
+        --primary-300: #b3b3b3;
+        --primary-400: #999999;
+        --primary-500: #808080;
+        --primary-600: #666666;
+        --primary-700: #4d4d4d;
+        --primary-800: #333333;
+        --primary-900: #1a1a1a;
+      }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900">
+    <div class="relative flex size-full min-h-screen flex-col bg-gray-900 dark justify-between group/design-root"
+        style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+        <div class="flex flex-col">
+            <header class="flex items-center p-4">
+                <button class="text-white">
+                    <span class="material-symbols-outlined"> arrow_back_ios_new </span>
+                </button>
+                <h1 class="flex-1 text-center text-xl font-bold text-white">Location Risk</h1>
+                <div class="w-8"></div>
+            </header>
+            <div class="relative h-64 w-full">
+                <img alt="Tawang Monastery" class="h-full w-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_H16s1C0F2278I_0MFE30MDsMau143VHW2lywiJUz_2hpJDUAP_HVg-TbMn1Nqr9NLzFut-rf4T6xHq6a_GFxZUp6dIFoKe-hv93F4FNbuZ_6_3-CkPLsnx1JFSi4FLfWQcui0GeyecdrnQWFs4uwNrDVkbrqTPlF9gxuiWNxGTApwmEa0kpNSsQgyL8P7rJ--ZiEPQWUPOCi5UFbyfNQpKIHtDzLpJSLXoK0UnBbHcu1lVbvoPqWlKAWu4xjeVI1mn0AaeNdv3U" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-4">
+                    <h2 class="text-3xl font-bold text-white">Tawang Monastery</h2>
+                    <p class="text-lg text-red-500">Crowd Risk: High</p>
+                </div>
+            </div>
+            <div class="h-64 w-full px-4 pt-4">
+                <img alt="Heatmap of the area" class="h-full w-full rounded-lg object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6mWjjtizkz693ff_Pf27_f9IbPGGE8AlFDsmQOikkcvTyLBmWQdxBZ-5baRFwiASoCpAd7O3rtX4QKaAgtRQhomXXZigLtQHrVV17biT-ZIzXv-crV3yonJiKIvpT5t2HMCB82-euplhfZlj70FgbTbSAPwKvNv-dCsyyXuFhByu7a7_GRvVm1buwmd6qeC4z6f7M1vhKLET78v8ac-LBbB5oyneyddD-0gM4ORjBfgGLeq3jHerNbZ7_OeFqx64yXZTaa0ecqBE" />
+            </div>
+            <div class="px-4 pt-6">
+                <h3 class="mb-2 text-lg font-semibold text-white">Key Statistics</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-lg bg-gray-800 p-4 text-center">
+                        <p class="text-sm text-gray-400">Current Visitors</p>
+                        <p class="text-2xl font-bold text-white">1,250</p>
+                    </div>
+                    <div class="rounded-lg bg-gray-800 p-4 text-center">
+                        <p class="text-sm text-gray-400">Max Safe Capacity</p>
+                        <p class="text-2xl font-bold text-red-500">1,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 pt-6">
+                <h3 class="mb-2 text-lg font-semibold text-white">Actions</h3>
+                <div class="flex flex-col space-y-3">
+                    <button
+                        class="flex w-full items-center justify-center rounded-lg bg-blue-600 py-3 text-sm font-bold text-white hover:bg-blue-700">
+                        <span class="material-symbols-outlined mr-2"> campaign </span>
+                        Send Advisory
+                    </button>
+                    <button
+                        class="flex w-full items-center justify-center rounded-lg bg-red-600 py-3 text-sm font-bold text-white hover:bg-red-700">
+                        <span class="material-symbols-outlined mr-2"> block </span>
+                        Block Entry
+                    </button>
+                    <button
+                        class="flex w-full items-center justify-center rounded-lg bg-gray-700 py-3 text-sm font-bold text-white hover:bg-gray-600">
+                        <span class="material-symbols-outlined mr-2"> alt_route </span>
+                        Open Alternate Routes
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer class="sticky bottom-0 mt-8 border-t border-gray-700 bg-gray-900 pb-safe">
+            <nav class="flex items-center justify-around px-4 pt-2">
+                <a class="flex flex-col items-center gap-1 text-blue-500" href="#">
+                    <span class="material-symbols-outlined"> home </span>
+                    <span class="text-xs">Home</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white" href="#">
+                    <span class="material-symbols-outlined"> travel_explore </span>
+                    <span class="text-xs">Explore</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white" href="#">
+                    <span class="material-symbols-outlined"> add_location_alt </span>
+                    <span class="text-xs">Report</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white" href="#">
+                    <span class="material-symbols-outlined"> notifications </span>
+                    <span class="text-xs">Alerts</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white" href="#">
+                    <span class="material-symbols-outlined"> person </span>
+                    <span class="text-xs">Profile</span>
+                </a>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

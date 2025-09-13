@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #1173d4;
+            --primary-color-light: #e7f1fc;
+            --primary-color-dark: #0d5aab;
+            --text-color: #0d141b;
+            --secondary-text-color: #4c739a;
+            --background-color: #f8fafc;
+        }
+        .form-input-custom {
+            @apply w-full h-14 bg-white rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 outline-none p-4 placeholder:text-slate-400 text-slate-800 transition-shadow duration-200;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col justify-center items-center px-4 py-8 group/design-root overflow-x-hidden">
+<div class="w-full max-w-sm">
+<div class="flex flex-col items-center mb-8">
+<div class="w-24 h-24 mb-4">
+<img alt="Government Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZabuSlOgALXh7qxEZQkZq58QtEnj0vDDPmJqWAz1WNVevqUNhDq0hrTYk_-3EkkhddadR4aKFvtQzrbvsCi1dIvQCh0m5L5W7hCst3FKbgi99R3NnHKa_KikgrOIbpSfQ4JaA8bKyIhU2qmbWgx_AQG-RXZq5MeZlBw3NTGvfAt4abRrbgrzWc3CTC-TQZUevuW-jVB9U-Ded1ePVNHlsIMwWYEO2ZrExRi1FOR_YuLojlUwFmE01kglQE4EWFx0Eu8tEWfOnnlA"/>
+</div>
+<h1 class="text-2xl font-bold text-[var(--text-color)]">Authorities Portal</h1>
+<p class="text-[var(--secondary-text-color)] mt-1">Tourist Safety &amp; Monitoring System</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-lg">
+<h2 class="text-xl font-semibold text-[var(--text-color)] text-center mb-6">Secure Login</h2>
+<div class="space-y-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">person</span>
+<input class="form-input-custom pl-11" placeholder="Username" type="text"/>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">lock</span>
+<input class="form-input-custom pl-11" placeholder="Password" type="password"/>
+</div>
+</div>
+
+<div class="mt-6">
+<button id="login" class="flex w-full items-center justify-center rounded-lg h-12 px-5 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[var(--primary-color-dark)] transition-colors duration-200">
+<span>Login</span>
+</button>
+</div>
+
+<div class="text-center mt-4">
+<a class="text-sm text-[var(--primary-color)] hover:underline" href="#">Forgot password?</a>
+</div>
+</div>
+<p class="text-xs text-slate-400 text-center mt-8">
+                © 2024 Department of Tourism. All rights reserved.
+            </p>
+</div>
+</div>
+
+<script src="login.js"></script>
+
+</body></html>

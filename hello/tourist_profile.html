@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans:wght@400;500;700;900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --primary-50: #eef2ff;
+        --primary-100: #e0e7ff;
+        --primary-200: #c7d2fe;
+        --primary-300: #a5b4fc;
+        --primary-400: #818cf8;
+        --primary-500: #6366f1;
+        --primary-600: #4f46e5;
+        --primary-700: #4338ca;
+        --primary-800: #3730a3;
+        --primary-900: #312e81;
+        --primary-950: #1e1b4b;
+      }
+      body {
+        font-family: 'Public Sans', sans-serif;
+      }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+        <div class="flex-grow">
+            <header class="sticky top-0 z-10 bg-gray-900/80 backdrop-blur-sm">
+                <div class="flex items-center p-4">
+                    <button class="text-white">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <h1 class="flex-1 text-center text-xl font-bold">Tourist Details</h1>
+                    <div class="w-8"></div>
+                </div>
+                <div class="px-4 pb-2 text-center">
+                    <p class="text-xs text-red-400 font-bold uppercase tracking-wider">Panic Button Activated</p>
+                </div>
+            </header>
+            <main class="p-4">
+                <section class="mb-6 rounded-lg bg-gray-800 p-4 text-center">
+                    <h2 class="text-sm font-semibold uppercase tracking-wider text-blue-400">Blockchain Tourist ID</h2>
+                    <p class="mt-1 font-mono text-lg text-white">4872-9834-1234-5678</p>
+                </section>
+                <section class="mb-6 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
+                    <div class="relative">
+                        <div class="aspect-square w-32 rounded-full bg-cover bg-center bg-no-repeat"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIxCZdS75k8ywMEywrpLH94mOzZSZ0EdsUMqowJfAiuiuQ5K10h9PAAKdMDvDm89SLZh-Hs9GRHzX9_eF0WQhNURCD4JKDVubQre1zcKfki9xgGmrq6MX4Qo9frjEGF32uxdryk5Ze-3oZw1AC1z4a9kcVJwK6PYw_ZbxKrUs5RaTo19ZpTOIjz--AtKDVoZDjyCH0qrOoU-mnsvQ3V8mqxoLX4EW9Lf-kKtHoXXQKf_v6ygOtrUlf-y7_WO5nSDDQlQximlFmegc");'>
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 rounded-full border-2 border-gray-900 bg-red-600 px-2 py-0.5 text-xs font-bold uppercase">
+                            High Risk</div>
+                    </div>
+                    <div class="flex-grow text-center sm:text-left">
+                        <h2 class="text-2xl font-bold text-white">Arjun Sharma</h2>
+                        <p class="text-gray-400">Age: 28, Indian</p>
+                        <p class="mt-2 text-sm text-gray-400">
+                            <span class="font-semibold text-gray-300">Emergency Contact:</span>
+                            <br />
+                            +91 9876543210
+                        </p>
+                    </div>
+                </section>
+                <section class="mb-6">
+                    <h3 class="mb-2 text-lg font-bold">Live Location</h3>
+                    <div class="aspect-video w-full rounded-lg bg-cover bg-center bg-no-repeat"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1FC_v0VZofk1jNStq1rnSPwLNh244kVOXCXoAwqF7aJh2HeFfPdLIHU_4XmXGfn62UGQJf6nX5eXU2ugXZ6-ZcvbhdskwSpwWNd2edNicPaOUUsgkEDnHeS3LLAdqQdeZVLAldFZ7Bww6ugRdj85fOwg8KtFCtCkPpOb4nILO28FrYQ269nHAn64B5KUK-lK4gE8I0OAMgeSuzKmmFRRa_-jnJLafC0Ahj1PuNIaLReHhs6li-DgzxCWJd8_iBwD-BMOP5jCarLI");'>
+                    </div>
+                </section>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <section>
+                        <h3 class="mb-2 text-lg font-bold">Last Known Locations</h3>
+                        <div class="relative space-y-4 pl-8">
+                            <div class="absolute left-3 top-2 h-full w-0.5 bg-gray-700"></div>
+                            <div class="relative">
+                                <div
+                                    class="absolute -left-5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500">
+                                    <div class="h-2 w-2 rounded-full bg-white"></div>
+                                </div>
+                                <p class="font-semibold text-white">25.5769° N, 91.8814° E</p>
+                                <p class="text-sm text-gray-400">10:30 AM</p>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="absolute -left-5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500">
+                                    <div class="h-2 w-2 rounded-full bg-white"></div>
+                                </div>
+                                <p class="font-semibold text-white">25.5765° N, 91.8810° E</p>
+                                <p class="text-sm text-gray-400">10:20 AM</p>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="absolute -left-5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500">
+                                    <div class="h-2 w-2 rounded-full bg-white"></div>
+                                </div>
+                                <p class="font-semibold text-white">25.5760° N, 91.8805° E</p>
+                                <p class="text-sm text-gray-400">10:10 AM</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="mb-2 text-lg font-bold">Travel History (Blockchain)</h3>
+                        <div class="relative space-y-4 pl-8">
+                            <div class="absolute left-3 top-2 h-full w-0.5 bg-gray-700"></div>
+                            <div class="relative">
+                                <div
+                                    class="absolute -left-5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-gray-500">
+                                    <div class="h-2 w-2 rounded-full bg-gray-800"></div>
+                                </div>
+                                <p class="font-semibold text-white">Visited Cherrapunji</p>
+                                <p class="text-sm text-gray-400">Yesterday, 2:00 PM</p>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="absolute -left-5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-gray-500">
+                                    <div class="h-2 w-2 rounded-full bg-gray-800"></div>
+                                </div>
+                                <p class="font-semibold text-white">Trek to Living Root Bridges</p>
+                                <p class="text-sm text-gray-400">Yesterday, 9:00 AM</p>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="absolute -left-5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-gray-500">
+                                    <div class="h-2 w-2 rounded-full bg-gray-800"></div>
+                                </div>
+                                <p class="font-semibold text-white">Checked into Hotel Polo Towers</p>
+                                <p class="text-sm text-gray-400">2 days ago, 6:00 PM</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <footer class="sticky bottom-0 bg-gray-900/80 backdrop-blur-sm">
+            <div class="p-4">
+                <div class="grid grid-cols-3 gap-2">
+                    <button
+                        class="flex w-full items-center justify-center gap-2 rounded-md bg-red-600 px-4 py-3 text-sm font-bold text-white hover:bg-red-700">
+                        <span class="material-symbols-outlined">verified_user</span>
+                        <span>Acknowledge</span>
+                    </button>
+                    <button
+                        class="flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 px-4 py-3 text-sm font-bold text-white hover:bg-blue-700">
+                        <span class="material-symbols-outlined">local_hospital</span>
+                        <span>Dispatch</span>
+                    </button>
+                    <button
+                        class="flex w-full items-center justify-center gap-2 rounded-md bg-gray-700 px-4 py-3 text-sm font-bold text-white hover:bg-gray-600">
+                        <span class="material-symbols-outlined">call</span>
+                        <span>Contact</span>
+                    </button>
+                </div>
+            </div>
+            <nav class="border-t border-gray-800 bg-gray-900 px-4 pb-3 pt-2">
+                <div class="flex justify-around">
+                    <a class="flex flex-col items-center justify-center gap-1 text-blue-400" href="#">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="text-xs">Home</span>
+                    </a>
+                    <a class="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-white" href="#">
+                        <span class="material-symbols-outlined">group</span>
+                        <span class="text-xs">Tourists</span>
+                    </a>
+                    <a class="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-white" href="#">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span class="text-xs">Alerts</span>
+                    </a>
+                    <a class="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-white" href="#">
+                        <span class="material-symbols-outlined">settings</span>
+                        <span class="text-xs">Settings</span>
+                    </a>
+                </div>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>
